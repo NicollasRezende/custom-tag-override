@@ -1,0 +1,5 @@
+Bundle-Name: Custom Asset Tag Override
+Bundle-SymbolicName: com.seatecnologia.br.asset.tag.override
+Bundle-Version: 1.0.0
+
+-dsannotations-options: inherit
