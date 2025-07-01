@@ -3,3 +3,9 @@ Bundle-SymbolicName: com.seatecnologia.br.asset.tag.override
 Bundle-Version: 1.0.0
 
 -dsannotations-options: inherit
+
+# Não especificar versões para permitir qualquer versão disponível
+Import-Package: \
+    com.liferay.asset.kernel.service,\
+    com.liferay.portal.kernel.*,\
+    *
