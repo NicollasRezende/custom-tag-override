@@ -1,0 +1,26 @@
+Liferay.Service(
+  '/assettag/add-tag',
+  {
+    groupId: Liferay.ThemeDisplay.getScopeGroupId(),
+    name: 'c+',
+    serviceContext: {}
+  },
+  function(obj) {
+    console.log('Tag criada:', obj);
+  }
+);
+
+// Criar múltiplas tags
+['c+', 'teste+mais', 'java+script'].forEach(tagName => {
+  Liferay.Service(
+    '/assettag/add-tag',
+    {
+      groupId: Liferay.ThemeDisplay.getScopeGroupId(),
+      name: tagName,
+      serviceContext: {}
+    },
+    function(obj) {
+      console.log('Tag criada:', tagName, obj);
+    }
+  );
+});

@@ -22,6 +22,7 @@ import org.osgi.service.component.annotations.Reference;
  *
  * @author Nicollas Rezende
  */
+
 @Component(
 		immediate = true,
 		property = {
@@ -29,6 +30,7 @@ import org.osgi.service.component.annotations.Reference;
 		},
 		service = ServiceWrapper.class
 )
+
 public class CustomAssetTagLocalServiceWrapper extends AssetTagLocalServiceWrapper {
 
 	private static final Log _log = LogFactoryUtil.getLog(CustomAssetTagLocalServiceWrapper.class);
